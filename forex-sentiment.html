@@ -161,6 +161,13 @@
     </div>
 
     <script type="text/javascript">showOutlookWidget()</script>
+    <script type="text/javascript">document.addEventListener("DOMContentLoaded", () => {
+        let script = document.querySelector('script.powered');
+        let div = script.nextSibling;
+        let iframe = div.querySelector('iframe');
+        div.style.height = "100vh";
+        iframe.height = "100%";
+    })</script>
     <!-- myfxbook.com outlook widget - End -->
 </body>
 
